@@ -64,6 +64,7 @@ int Opponent::get_opponentset()
 
 void Opponent::generate_opponents_ai()
 {
+	int i;//random help
 	if(Game::field[4]=='X'|| Game::field[4]=='O')
 	{
 		/*************************************************
@@ -138,13 +139,86 @@ void Opponent::generate_opponents_ai()
 		/*****************
 		Looks for tricks of X
 		*******************/
+		/**
+		-1:-
+		**/
+		else if (Game::field[0]=='1' && Game::field[1]=='2' && Game::field[2]=='O' && Game::field[3]=='O' && Game::field[4]=='X' && Game::field[5]=='X' && Game::field[6]=='X' && Game::field[7]=='8' && Game::field[8]=='9')
+			opponentset=rand()%2+1;
+		else if (Game::field[0]=='X' && Game::field[1]=='2' && Game::field[2]=='3' && Game::field[3]=='O' && Game::field[4]=='X' && Game::field[5]=='X' && Game::field[6]=='7' && Game::field[7]=='8' && Game::field[8]=='O')
+			opponentset=rand()%2+7;
+		else if (Game::field[0]=='1' && Game::field[1]=='2' && Game::field[2]=='X' && Game::field[3]=='X' && Game::field[4]=='X' && Game::field[5]=='O' && Game::field[6]=='O' && Game::field[7]=='8' && Game::field[8]=='9')
+			opponentset=rand()%2+8;
+		else if (Game::field[0]=='O' && Game::field[1]=='2' && Game::field[2]=='3' && Game::field[3]=='X' && Game::field[4]=='X' && Game::field[5]=='O' && Game::field[6]=='7' && Game::field[7]=='8' && Game::field[8]=='X')
+			opponentset=rand()%2+2;
+		else if (Game::field[0]=='O' && Game::field[1]=='X' && Game::field[2]=='3' && Game::field[3]=='4' && Game::field[4]=='X' && Game::field[5]=='6' && Game::field[6]=='7' && Game::field[7]=='O' && Game::field[8]=='X')
+		{
+			i=rand()%2;
+			if(i=0)
+				opponentset=4;
+			else
+				opponentset=7;
+		}	
+		else if (Game::field[0]=='1' && Game::field[1]=='X' && Game::field[2]=='O' && Game::field[3]=='4' && Game::field[4]=='X' && Game::field[5]=='6' && Game::field[6]=='X' && Game::field[7]=='O' && Game::field[8]=='9')
+		{
+			i=rand()%2;
+			if(i=0)
+				opponentset=6;
+			else
+				opponentset=9;
+		}	
+		else if (Game::field[0]=='X' && Game::field[1]=='O' && Game::field[2]=='3' && Game::field[3]=='4' && Game::field[4]=='X' && Game::field[5]=='6' && Game::field[6]=='7' && Game::field[7]=='X' && Game::field[8]=='O')
+		{
+			i=rand()%2;
+			if(i=0)
+				opponentset=3;
+			else
+				opponentset=6;
+		}	
+		else if (Game::field[0]=='1' && Game::field[1]=='O' && Game::field[2]=='X' && Game::field[3]=='4' && Game::field[4]=='X' && Game::field[5]=='6' && Game::field[6]=='O' && Game::field[7]=='X' && Game::field[8]=='9')
+		{
+			i=rand()%2;
+			if(i=0)
+				opponentset=1;
+			else
+				opponentset=4;
+		}	
+		/**
+		-2:-
+		**/
+		else if ((Game::field[0]=='1' && Game::field[1]=='2' && Game::field[2]=='O' && Game::field[3]=='4' && Game::field[4]=='X' && Game::field[5]=='6' && Game::field[6]=='X' && Game::field[7]=='8' && Game::field[8]=='9')||(Game::field[0]=='1' && Game::field[1]=='2' && Game::field[2]=='X' && Game::field[3]=='4' && Game::field[4]=='X' && Game::field[5]=='6' && Game::field[6]=='O' && Game::field[7]=='8' && Game::field[8]=='9'))
+		{
+			i=rand()%2;
+			if(i=0)
+				opponentset=1;
+			else
+				opponentset=9;
+		}	
+		else if ((Game::field[0]=='X' && Game::field[1]=='2' && Game::field[2]=='3' && Game::field[3]=='4' && Game::field[4]=='X' && Game::field[5]=='6' && Game::field[6]=='7' && Game::field[7]=='8' && Game::field[8]=='O')||(Game::field[0]=='O' && Game::field[1]=='2' && Game::field[2]=='3' && Game::field[3]=='4' && Game::field[4]=='X' && Game::field[5]=='6' && Game::field[6]=='7' && Game::field[7]=='8' && Game::field[8]=='X'))
+		{
+			i=rand()%2;
+			if(i=0)
+				opponentset=3;
+			else
+				opponentset=7;
+		}	
+		/**
+		-3-
+		**/
+
+		/**
+		-4-
+		**/
+
 		/*****************
 		Looks for own tricks possible
 		*****************/
 		/**************
 		sets random 'O'
 		**************/
-
+		else 
+		{
+			opponentset=rand()%10;
+		}
 	}
 	else{
 		opponentset=5;

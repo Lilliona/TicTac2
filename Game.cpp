@@ -39,9 +39,11 @@ void Game::turn()
 		}
 		else
 		{
-			o.ask_for_opponentset();
-			messenger_of_X_or_O=o.get_opponentset();
+			//o.ask_for_opponentset();
+			o.generate_opponents_ai();
+			messenger_of_X_or_O=o.get_opponents_ai();
 			mark='O';
+		
 		}
 
 		/*******************************

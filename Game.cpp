@@ -93,13 +93,21 @@ void Game::turn()
 	if (i==1)
 	{
 		if(who_inserts==2)
+		{
 			cout << "Yay the Player won!" << endl << endl;
+			win_counter_of_player++;
+		}
 		else
+		{
 			cout << "Oh no, the Opponent won!" << endl << endl;
+			win_counter_of_opponent++;
+		}
 	}
 	else 
+	{
 		cout << "Draw!" << endl;
-
+		win_counder_of_draw++;
+	}
 }
 
 void Game::show_field()
@@ -137,4 +145,63 @@ int Game::check_if_won()
 	{	
 		return -1;
 	}
+}
+
+void Game::management_of_turn()
+{
+	win_counder_of_draw=0;
+	win_counter_of_opponent=0;
+	win_counter_of_player=0;
+	char switch_help;
+	int switch_stop=0;
+
+	turn();
+	cout << endl;
+	cout << "Scores:" << endl;
+	cout << "____________" << endl;
+	cout << "Player: " << win_counter_of_player << endl;
+	cout << "Opponent: " << win_counter_of_opponent << endl;
+	cout << "Draw: " << win_counder_of_draw << endl;
+	cout << endl;
+
+
+	do
+	{
+		cout << "Do you want  to play another game or do you like to exit?" << endl;
+		cout << "[x] Exit" << endl << "[c] Continue" << endl;
+		cin >> switch_help;
+		
+		switch(switch_help)
+		{
+			case 'x':
+				switch_stop=1;
+				break;
+			case 'c':
+				clear_field();
+				turn();
+				cout << endl;
+				cout << "Scores:" << endl;
+				cout << "____________" << endl;
+				cout << "Player: " << win_counter_of_player << endl;
+				cout << "Opponent: " << win_counter_of_opponent << endl;
+				cout << "Draw: " << win_counder_of_draw << endl;
+				cout << endl;
+				break;
+			default:
+				cout << "Invalid Input, please try again!" << endl;
+		}
+	}while(switch_stop==0);
+}
+
+void Game::clear_field()
+{
+	field[0]='1';
+	field[1]='2';
+	field[2]='3';
+	field[3]='4';
+	field[4]='5';
+	field[5]='6';
+	field[6]='7';
+	field[7]='8';
+	field[8]='9';
 }

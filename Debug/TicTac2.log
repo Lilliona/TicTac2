@@ -1,13 +1,24 @@
-﻿Der Buildvorgang wurde am 25.02.2014 17:04:16 gestartet.
+﻿Der Buildvorgang wurde am 26.02.2014 15:09:07 gestartet.
      1>Projekt "C:\Users\Julia\Informatik\ZTT\TicTac2\TicTac2\TicTac2.vcxproj" auf Knoten "2", build Ziel(e).
      1>InitializeBuildStatus:
-         Aktualisieren des Timestamps von "Debug\TicTac2.unsuccessfulbuild".
+         "Debug\TicTac2.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Opponent.cpp
-         Opponent.cpp
-     1>c:\users\julia\informatik\ztt\tictac2\tictac2\opponent.cpp(156): error C2181: Ungültiges 'else' ohne zugehöriges 'if'
-     1>Die Erstellung des Projekts "C:\Users\Julia\Informatik\ZTT\TicTac2\TicTac2\TicTac2.vcxproj" ist abgeschlossen, build Ziel(e) -- FEHLER.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp
+         Game.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\TicTac2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.lib" /MACHINE:X86 Debug\Game.obj
+         Debug\main.obj
+         Debug\Opponent.obj
+         Debug\Player.obj
+         LINK : C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.exe wurde nicht gefunden oder beim letzten inkrementellen Linkvorgang nicht erstellt; vollständiger Link wird durchgeführt.
+         TicTac2.vcxproj -> C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.exe;#1" /manifest Debug\TicTac2.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Die Datei "Debug\TicTac2.unsuccessfulbuild" wird gelöscht.
+         Aktualisieren des Timestamps von "Debug\TicTac2.lastbuildstate".
+     1>Die Erstellung des Projekts "C:\Users\Julia\Informatik\ZTT\TicTac2\TicTac2\TicTac2.vcxproj" ist abgeschlossen, build Ziel(e).
 
-Fehler beim Erstellen
+Das Erstellen war erfolgreich.
 
-Verstrichene Zeit 00:00:00.77
+Verstrichene Zeit 00:00:00.73

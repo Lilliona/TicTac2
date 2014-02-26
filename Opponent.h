@@ -15,6 +15,8 @@ public:
 	Opponent(void);
 	~Opponent(void);
 
+	int generate_opponents_scores();
+
 	void ask_for_opponentset();
 	int get_opponentset();
 	

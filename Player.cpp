@@ -2,9 +2,7 @@
 
 Player::Player()
 {
-	
 }
-
 
 Player::~Player(void)
 {
@@ -15,7 +13,7 @@ void Player::ask_for_playerset()
 	cout << "Player, please insert a number where you want to place your \"X\": ";
 
 /******************Input Validation*********************/
-
+	
 	string isNumeric;
 
 	while (1)

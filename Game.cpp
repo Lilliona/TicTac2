@@ -39,7 +39,7 @@ void Game::turn()
 		}
 		else
 		{
-			//o.ask_for_opponentset();
+			//o.ask_for_opponents_set();
 			o.generate_opponents_ai();
 			messenger_of_X_or_O=o.get_opponents_ai();
 			mark='O';
@@ -106,8 +106,16 @@ void Game::turn()
 	else 
 	{
 		cout << "Draw!" << endl;
-		win_counder_of_draw++;
+		win_counter_of_draw++;
 	}
+
+	cout << endl;
+	cout << "Scores:" << endl;
+	cout << "____________" << endl;
+	cout << "Player: " << win_counter_of_player << endl;
+	cout << "Opponent: " << win_counter_of_opponent << endl;
+	cout << "Draw: " << win_counter_of_draw << endl;
+	cout << endl;
 }
 
 void Game::show_field()
@@ -149,20 +157,14 @@ int Game::check_if_won()
 
 void Game::management_of_turn()
 {
-	win_counder_of_draw=0;
+	win_counter_of_draw=0;
 	win_counter_of_opponent=0;
 	win_counter_of_player=0;
 	char switch_help;
 	int switch_stop=0;
 
 	turn();
-	cout << endl;
-	cout << "Scores:" << endl;
-	cout << "____________" << endl;
-	cout << "Player: " << win_counter_of_player << endl;
-	cout << "Opponent: " << win_counter_of_opponent << endl;
-	cout << "Draw: " << win_counder_of_draw << endl;
-	cout << endl;
+
 
 
 	do
@@ -179,12 +181,6 @@ void Game::management_of_turn()
 			case 'c':
 				clear_field();
 				turn();
-				cout << endl;
-				cout << "Scores:" << endl;
-				cout << "____________" << endl;
-				cout << "Player: " << win_counter_of_player << endl;
-				cout << "Opponent: " << win_counter_of_opponent << endl;
-				cout << "Draw: " << win_counder_of_draw << endl;
 				cout << endl;
 				break;
 			default:

@@ -14,9 +14,10 @@ public:
 	Opponent(void);
 	~Opponent(void);
 	int generate_opponents_scores();
-	void ask_for_opponents_set();
-	int get_opponents_set();
-	void generate_opponents_ai();
+	void generate_opponents_ai_easy();
+	void generate_opponents_ai_normal();
+	void generate_opponents_ai_hard();
 	int get_opponents_ai();
+	
 };
 

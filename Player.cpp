@@ -10,7 +10,7 @@ Player::~Player(void)
 
 void Player::ask_for_playerset()
 {
-	cout << "Player, please insert a number where you want to place your \"X\": ";
+	cout << "Player, please insert a number where you want to place your \"X\": " << endl;
 
 /******************Input Validation*********************/
 	

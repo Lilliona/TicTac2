@@ -11,6 +11,9 @@ class Game
 	int win_counter_of_draw;
 	void turn();
 	void clear_field();
+	void rules_introduction();
+	void menu_of_turn();
+	int difficulty_of_opponent;
 public:
 	Game(void);
 	~Game(void);

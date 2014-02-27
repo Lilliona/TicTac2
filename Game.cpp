@@ -39,9 +39,28 @@ void Game::turn()
 		}
 		else
 		{
-			//o.ask_for_opponents_set();
-			o.generate_opponents_ai();
-			messenger_of_X_or_O=o.get_opponents_ai();
+			switch(difficulty_of_opponent)
+			{
+				
+			case 1:
+				o.generate_opponents_ai_easy();
+				cout << "difficulty: " << difficulty_of_opponent << endl;
+							messenger_of_X_or_O=o.get_opponents_ai();
+				break;
+			case 2:
+				o.generate_opponents_ai_normal();
+				cout << "difficulty: " << difficulty_of_opponent << endl;
+							messenger_of_X_or_O=o.get_opponents_ai();
+				break;
+			case 3:
+				o.generate_opponents_ai_hard();
+				cout << "difficulty: " << difficulty_of_opponent << endl;
+							messenger_of_X_or_O=o.get_opponents_ai();
+				break;
+			default: 
+				cout << "sdifficulty: " << difficulty_of_opponent << endl;
+			}
+			
 			mark='O';
 		
 		}
@@ -160,27 +179,26 @@ void Game::management_of_turn()
 	win_counter_of_draw=0;
 	win_counter_of_opponent=0;
 	win_counter_of_player=0;
-	char switch_help;
+	char switch_help_difficulty;
+	char switch_help_roundnumber;
 	int switch_stop=0;
 
-	turn();
-
-
+	menu_of_turn();
 
 	do
 	{
 		cout << "Do you want  to play another game or do you like to exit?" << endl;
 		cout << "[x] Exit" << endl << "[c] Continue" << endl;
-		cin >> switch_help;
+		cin >> switch_help_roundnumber;
 		
-		switch(switch_help)
+		switch(switch_help_roundnumber)
 		{
 			case 'x':
 				switch_stop=1;
 				break;
 			case 'c':
 				clear_field();
-				turn();
+				menu_of_turn();
 				cout << endl;
 				break;
 			default:
@@ -200,4 +218,82 @@ void Game::clear_field()
 	field[6]='7';
 	field[7]='8';
 	field[8]='9';
+}
+
+void Game::rules_introduction()
+{
+	cout << endl << "   RULES" << endl;
+	cout << "   -----" << endl << endl;
+	cout << "   Choose a fieldnumber to place your 'X'." << endl;
+	cout << "   After each of your turns the Computer" << endl;
+	cout << "   will place an 'O'." << endl << endl;
+	cout << "   The one with the first three symbols in" << endl;
+	cout << "   a line wins." << endl;
+	cout << "   Try your luck and take the challenge against the Evilness!" << endl << endl;
+	cout << "    ^___^" << endl;
+	cout << "   ( o o )" << endl;
+	cout << "      V" << endl;
+	cout << "     ,-," << endl;
+	cout << "      v" << endl << endl;
+}
+
+
+void Game::menu_of_turn()
+{
+	char help_for_rules;
+	char help_for_difficulty;
+	int help_for_difficulty_exit=1;
+	difficulty_of_opponent=0;
+
+	cout << endl << "WELCOME TO TICTACTOE!" << endl;
+	cout << endl << "_____________________" << endl << endl;
+	cout << "Do you know the rules?" << endl;
+	cout << "[Y] yes	[N] no" << endl;
+	cin >> help_for_rules;
+	switch(help_for_rules)
+	{
+	case 'Y':
+	case 'y':
+		cout << endl << "then let's continue..." << endl << endl;
+		break;
+	case 'N':
+	case 'n':
+		rules_introduction();
+		break;
+	default:
+		cout << endl << "Invalid value... Let's take that as a yes!" << endl << endl;
+	}
+	
+	do
+	{
+	cout << "What difficulty would you like to choose:" << endl;
+	cout << "[1] Easy" << endl;
+	cout << "[2] Normal" << endl;
+	cout << "[3] Hard" << endl;
+	cin >> help_for_difficulty;
+
+
+		switch(help_for_difficulty)
+		{
+		case '1': 
+			difficulty_of_opponent=1;
+			help_for_difficulty_exit=0;
+			break;
+		case '2':
+			difficulty_of_opponent=2;
+			help_for_difficulty_exit=0;
+			break;
+		case '3':
+			difficulty_of_opponent=3;
+			help_for_difficulty_exit=0;
+			break;
+		default:
+			cout << "Invalid value... Let's take '3' for Hardmode :D! Joke - please insert again:" << endl;
+			help_for_difficulty_exit=1;
+		}
+	
+	}while(help_for_difficulty_exit==1);
+	getchar();
+	turn();
+
 }

@@ -7,6 +7,7 @@ using namespace std;
 class Player
 {
 	int playerset;
+	void inputvalidation();
 public:
 	Player();
 	~Player(void);

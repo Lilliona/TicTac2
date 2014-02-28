@@ -39,7 +39,7 @@ void Game::turn()
 		}
 		else
 		{
-			switch(difficulty_of_opponent)
+			switch (difficulty_of_opponent)
 			{
 				
 			case 1:
@@ -111,7 +111,7 @@ void Game::turn()
 
 	if (i==1)
 	{
-		if(who_inserts==2)
+		if (who_inserts==2)
 		{
 			cout << "Yay the Player won!" << endl << endl;
 			win_counter_of_player++;
@@ -187,11 +187,11 @@ void Game::management_of_turn()
 
 	do
 	{
-		cout << "Do you want  to play another game or do you like to exit?" << endl;
+		cout << "Do you want to play another game or do you like to exit?" << endl;
 		cout << "[x] Exit" << endl << "[c] Continue" << endl;
 		cin >> switch_help_roundnumber;
 		
-		switch(switch_help_roundnumber)
+		switch (switch_help_roundnumber)
 		{
 			case 'x':
 				switch_stop=1;
@@ -204,7 +204,7 @@ void Game::management_of_turn()
 			default:
 				cout << "Invalid Input, please try again!" << endl;
 		}
-	}while(switch_stop==0);
+	}while (switch_stop==0);
 }
 
 void Game::clear_field()
@@ -241,49 +241,48 @@ void Game::rules_introduction()
 void Game::menu_of_turn()
 {
 	char help_for_rules;
-	char help_for_difficulty;
 	int help_for_difficulty_exit=1;
 	difficulty_of_opponent=0;
+	help_for_difficulty=0;
 
 	cout << endl << "WELCOME TO TICTACTOE!" << endl;
 	cout << endl << "_____________________" << endl << endl;
-	cout << "Do you know the rules?" << endl;
+	cout << "Do you want to see the rules?" << endl;
 	cout << "[Y] yes	[N] no" << endl;
 	cin >> help_for_rules;
-	switch(help_for_rules)
+	switch (help_for_rules)
 	{
 	case 'Y':
 	case 'y':
-		cout << endl << "then let's continue..." << endl << endl;
+		rules_introduction();
 		break;
 	case 'N':
 	case 'n':
-		rules_introduction();
+		cout << endl << "then let's continue..." << endl << endl;
 		break;
 	default:
-		cout << endl << "Invalid value... Let's take that as a yes!" << endl << endl;
+		cout << endl << "Invalid value... Let's take that as a no!" << endl << endl;
 	}
 	
 	do
 	{
-	cout << "What difficulty would you like to choose:" << endl;
-	cout << "[1] Easy" << endl;
-	cout << "[2] Normal" << endl;
-	cout << "[3] Hard" << endl;
-	cin >> help_for_difficulty;
+		cout << "What difficulty would you like to choose:" << endl;
+		cout << "[1] Easy" << endl;
+		cout << "[2] Normal" << endl;
+		cout << "[3] Hard" << endl;
+		inputvaildation();
 
-
-		switch(help_for_difficulty)
+		switch (help_for_difficulty)
 		{
-		case '1': 
+		case 1: 
 			difficulty_of_opponent=1;
 			help_for_difficulty_exit=0;
 			break;
-		case '2':
+		case 2:
 			difficulty_of_opponent=2;
 			help_for_difficulty_exit=0;
 			break;
-		case '3':
+		case 3:
 			difficulty_of_opponent=3;
 			help_for_difficulty_exit=0;
 			break;
@@ -292,8 +291,48 @@ void Game::menu_of_turn()
 			help_for_difficulty_exit=1;
 		}
 	
-	}while(help_for_difficulty_exit==1);
-	getchar();
+	}while (help_for_difficulty_exit==1);
 	turn();
 
+}
+
+void Game::inputvaildation()
+{
+	string entered_string;
+	while (1)
+	{
+		getline(cin, entered_string);
+
+		bool validateNumeric = true;
+
+		for (unsigned i=0; i < entered_string.length(); i++)
+		{
+			if (!isdigit(entered_string[i]))
+			{
+				validateNumeric = false;
+				break;
+			}
+		}
+		if (!validateNumeric)
+		{
+			cout << "wrong entry. try again: ";
+			continue;
+		}
+
+		stringstream sStream (entered_string);
+		sStream >> help_for_difficulty; 
+
+		if (help_for_difficulty>3)
+		{
+			cout << "You are over the valid range. Try again: ";
+			continue;
+		}
+
+		if (help_for_difficulty<1)
+		{
+			cout << "You are under the valid range. Try again: ";
+			continue;
+		}
+		break;
+	}
 }

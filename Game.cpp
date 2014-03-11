@@ -14,7 +14,6 @@ void Game::give_player2_the_chosen_difficulty_of_player1()
 {
 	player1.ask_for_difficulty();
 	player2.number_of_difficulty=player1.get_humans_choice_of_difficulty();
-	
 }
 
 //Game::Game()

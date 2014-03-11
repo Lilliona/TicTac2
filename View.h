@@ -1,14 +1,12 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include <sstream>
 using namespace std;
-
-class Player
+class View
 {
 public:
-	Player();
-	~Player(void);
-
+	View(void);
+	~View(void);
+	void player_view_set();
 };
 

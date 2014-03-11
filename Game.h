@@ -1,42 +1,21 @@
 #pragma once
 #include "Player.h"
-#include "Computer.h"
 #include "Human.h"
-
-// zu Objekt machen
-// interface
-
+#include "Computer.h"
 class Game
 {
-	Human player1;
-	Computer player2;
-	void give_player2_the_chosen_difficulty_of_player1();//**Implement please**//
+	void rules();
+	void turn();
+	Player *player1;
+	Player *player2;
 
 public:
 	Game(void);
+	Game(Player *player1_in,Player *player2_in)
+	{
+		player1=player1_in;
+		player2=player2_in;
+	}
 	~Game(void);
 };
-	//	//void show_field();
-	//	int check_if_won();
-	//	int win_counter_of_player;
-	//	int win_counter_of_computer;
-	//	int win_counter_of_draw;
-	//	int difficulty_of_computer;
-	//	int help_for_difficulty;
-	//	void turn();
-	//	void clear_field();
-	//	void rules_introduction();
-	//	void menu_of_turn();
-	//	void inputvaildation();
-	//public:
-	//	
-	//	static char field[9]; //nicht wiederverwendbar // static weg, keine variable,private
-	//	void management_of_turn();	
-//};
 
-
-//Controller, der Objekte erstellt und steuert -> Klassen kennen sich untereinander nicht
-
-
-//echte Objekte, + Controller(Game aus zwei spieler und spielfeld,)
-//erzeugt spielfeld, erzeugt spieler(nach aussuchen ob gegen pc oder player2)

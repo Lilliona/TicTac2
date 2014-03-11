@@ -4,18 +4,18 @@
 #include <time.h>
 #include <string>
 #include <sstream>
-#include "Game.h"
+#include "Controller.h"
 using namespace std;
 
 class Computer: public Player
 {
-	
-	void take_difficulty();//**not implemented!**//
-	void work_with_difficulty_chosen_by_human(); //**not implemented**//
 public:
 	Computer(void);
+	Computer(int difficulty_in);
 	~Computer(void);
+	void input_validation();
 	int number_of_difficulty;
+	void generate_computers_ai_at_difficulty();
 };
 //	int computers_set;
 //public:

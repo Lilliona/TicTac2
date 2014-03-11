@@ -1,24 +1,30 @@
-﻿Der Buildvorgang wurde am 11.03.2014 15:30:11 gestartet.
+﻿Der Buildvorgang wurde am 11.03.2014 19:25:20 gestartet.
      1>Projekt "C:\Users\Julia\Informatik\ZTT\TicTac2\TicTac2\TicTac2.vcxproj" auf Knoten "2", build Ziel(e).
      1>InitializeBuildStatus:
          Aktualisieren des Timestamps von "Debug\TicTac2.unsuccessfulbuild".
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Computer.cpp Game.cpp Human.cpp main.cpp
-         Human.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Computer.cpp Controller.cpp Game.cpp main.cpp
+         main.cpp
+     1>c:\users\julia\informatik\ztt\tictac2\tictac2\controller.h(12): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'game'
+     1>c:\users\julia\informatik\ztt\tictac2\tictac2\controller.h(12): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
+     1>c:\users\julia\informatik\ztt\tictac2\tictac2\controller.h(12): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
+     1>c:\users\julia\informatik\ztt\tictac2\tictac2\main.cpp(9): warning C4244: 'Argument': Konvertierung von 'time_t' in 'unsigned int', möglicher Datenverlust
          Game.cpp
-     1>c:\users\julia\informatik\ztt\tictac2\tictac2\game.cpp(15): error C2440: '=': 'void' kann nicht in 'int' konvertiert werden
-                 Ausdruck vom Typ void kann nicht in andere Typen konvertiert werden
-         Computer.cpp
-     1>c:\users\julia\informatik\ztt\tictac2\tictac2\game.h(12): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'player2'
-     1>c:\users\julia\informatik\ztt\tictac2\tictac2\game.h(12): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
-     1>c:\users\julia\informatik\ztt\tictac2\tictac2\game.h(12): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
+     1>c:\users\julia\informatik\ztt\tictac2\tictac2\controller.h(12): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'game'
+     1>c:\users\julia\informatik\ztt\tictac2\tictac2\controller.h(12): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
+     1>c:\users\julia\informatik\ztt\tictac2\tictac2\controller.h(12): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
          Code wird generiert...
          Kompilieren...
-         main.cpp
-     1>c:\users\julia\informatik\ztt\tictac2\tictac2\main.cpp(9): warning C4244: 'Argument': Konvertierung von 'time_t' in 'unsigned int', möglicher Datenverlust
+         Computer.cpp
+         Code wird generiert...
+         Kompilieren...
+         Controller.cpp
+     1>c:\users\julia\informatik\ztt\tictac2\tictac2\controller.cpp(15): error C2679: Binärer Operator '=': Es konnte kein Operator gefunden werden, der einen rechtsseitigen Operanden vom Typ 'Game *' akzeptiert (oder keine geeignete Konvertierung möglich)
+                 c:\users\julia\informatik\ztt\tictac2\tictac2\game.h(20): kann 'Game &Game::operator =(const Game &)' sein
+                 bei Anpassung der Argumentliste '(Game, Game *)'
          Code wird generiert...
      1>Die Erstellung des Projekts "C:\Users\Julia\Informatik\ZTT\TicTac2\TicTac2\TicTac2.vcxproj" ist abgeschlossen, build Ziel(e) -- FEHLER.
 
 Fehler beim Erstellen
 
-Verstrichene Zeit 00:00:01.54
+Verstrichene Zeit 00:00:01.33

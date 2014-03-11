@@ -2,15 +2,14 @@
 #include "Player.h"
 class Human: public Player
 {
-	int choose_difficulty;
+
 	void ask_for_playerset(); //**ready**//
-	void input_validation(/*s. .cpp*/);
+	void input_validation();
 
 public:
 	Human(void);
 	~Human(void);
-	void ask_for_difficulty();//**not implemented!**//
-	int get_humans_choice_of_difficulty();
+
 };
 
 //public:

@@ -1,6 +1,6 @@
 #pragma once
 #include "Player.h"
-#include "Opponent.h"
+#include "Computer.h"
 
 // zu Objekt machen
 // interface
@@ -8,7 +8,7 @@
 class Game
 {
 	Player player;
-	Opponent opponent;
+	Computer computer;
 
 public:
 
@@ -16,9 +16,9 @@ public:
 	//	//void show_field();
 	//	int check_if_won();
 	//	int win_counter_of_player;
-	//	int win_counter_of_opponent;
+	//	int win_counter_of_computer;
 	//	int win_counter_of_draw;
-	//	int difficulty_of_opponent;
+	//	int difficulty_of_computer;
 	//	int help_for_difficulty;
 	//	void turn();
 	//	void clear_field();

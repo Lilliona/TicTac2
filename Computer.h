@@ -7,21 +7,21 @@
 #include "Game.h"
 using namespace std;
 
-class Opponent
+class Computer
 {
 };
-//	int opponents_set;
+//	int computers_set;
 //public:
-//	Opponent(void);
-//	~Opponent(void);
-////	int generate_opponents_scores();
-//	void generate_opponents_ai_easy();
-//	void generate_opponents_ai_normal();
-//	void generate_opponents_ai_hard();
-//	int get_opponents_ai();
+//	Computer(void);
+//	~Computer(void);
+////	int generate_computers_scores();
+//	void generate_computers_ai_easy();
+//	void generate_computers_ai_normal();
+//	void generate_computers_ai_hard();
+//	int get_computers_ai();
 //	
 //};
 
-//Überklasse v. Player und Opponent
+//Überklasse v. Player und Computer
 
 

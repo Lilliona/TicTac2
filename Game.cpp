@@ -15,7 +15,7 @@
 //{
 //	
 //	Player x;
-//	Opponent o;
+//	Computer o;
 //	char mark;//bekommt den Wert X oder O je nach Spieler
 //	int who_inserts=1;//Wechsel zwischen Spielern durch %2
 //	int messenger_of_X_or_O=0;//überbringt das gewählte Feld vom aktuellen Spieler
@@ -39,26 +39,26 @@
 //		}
 //		else
 //		{
-//			switch (difficulty_of_opponent)
+//			switch (difficulty_of_computer)
 //			{
 //				
 //			case 1:
-//				o.generate_opponents_ai_easy();
-//				cout << "difficulty: " << difficulty_of_opponent << endl;
-//							messenger_of_X_or_O=o.get_opponents_ai();
+//				o.generate_computers_ai_easy();
+//				cout << "difficulty: " << difficulty_of_computer << endl;
+//							messenger_of_X_or_O=o.get_computers_ai();
 //				break;
 //			case 2:
-//				o.generate_opponents_ai_normal();
-//				cout << "difficulty: " << difficulty_of_opponent << endl;
-//							messenger_of_X_or_O=o.get_opponents_ai();
+//				o.generate_computers_ai_normal();
+//				cout << "difficulty: " << difficulty_of_computer << endl;
+//							messenger_of_X_or_O=o.get_computers_ai();
 //				break;
 //			case 3:
-//				o.generate_opponents_ai_hard();
-//				cout << "difficulty: " << difficulty_of_opponent << endl;
-//							messenger_of_X_or_O=o.get_opponents_ai();
+//				o.generate_computers_ai_hard();
+//				cout << "difficulty: " << difficulty_of_computer << endl;
+//							messenger_of_X_or_O=o.get_computers_ai();
 //				break;
 //			default: 
-//				cout << "sdifficulty: " << difficulty_of_opponent << endl;
+//				cout << "sdifficulty: " << difficulty_of_computer << endl;
 //			}
 //			
 //			mark='O';
@@ -118,8 +118,8 @@
 //		}
 //		else
 //		{
-//			cout << "Oh no, the Opponent won!" << endl << endl;
-//			win_counter_of_opponent++;
+//			cout << "Oh no, the Computer won!" << endl << endl;
+//			win_counter_of_computer++;
 //		}
 //	}
 //	else 
@@ -132,7 +132,7 @@
 //	cout << "Scores:" << endl;
 //	cout << "____________" << endl;
 //	cout << "Player: " << win_counter_of_player << endl;
-//	cout << "Opponent: " << win_counter_of_opponent << endl;
+//	cout << "Computer: " << win_counter_of_computer << endl;
 //	cout << "Draw: " << win_counter_of_draw << endl;
 //	cout << endl;
 //}
@@ -177,7 +177,7 @@
 //void Game::management_of_turn()
 //{
 //	win_counter_of_draw=0;
-//	win_counter_of_opponent=0;
+//	win_counter_of_computer=0;
 //	win_counter_of_player=0;
 //	char switch_help_difficulty;
 //	char switch_help_roundnumber;
@@ -237,7 +237,7 @@
 //{
 //	char help_for_rules;
 //	int help_for_difficulty_exit=1;
-//	difficulty_of_opponent=0;
+//	difficulty_of_computer=0;
 //	help_for_difficulty=0;
 //
 //	cout << endl << "WELCOME TO TICTACTOE!" << endl;
@@ -270,15 +270,15 @@
 //		switch (help_for_difficulty)
 //		{
 //		case 1: 
-//			difficulty_of_opponent=1;
+//			difficulty_of_computer=1;
 //			help_for_difficulty_exit=0;
 //			break;
 //		case 2:
-//			difficulty_of_opponent=2;
+//			difficulty_of_computer=2;
 //			help_for_difficulty_exit=0;
 //			break;
 //		case 3:
-//			difficulty_of_opponent=3;
+//			difficulty_of_computer=3;
 //			help_for_difficulty_exit=0;
 //			break;
 //		default:

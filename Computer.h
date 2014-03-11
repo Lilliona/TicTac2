@@ -7,8 +7,15 @@
 #include "Game.h"
 using namespace std;
 
-class Computer
+class Computer: public Player
 {
+	
+	void take_difficulty();//**not implemented!**//
+	void work_with_difficulty_chosen_by_human(); //**not implemented**//
+public:
+	Computer(void);
+	~Computer(void);
+	int number_of_difficulty;
 };
 //	int computers_set;
 //public:

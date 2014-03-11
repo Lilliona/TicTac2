@@ -3,6 +3,7 @@
 
 Human::Human(void)
 {
+	choose_difficulty=0;
 }
 
 
@@ -55,4 +56,15 @@ void Human::input_validation(/*'Bereich'änderung für Menü,  vllt später*/)
 		}
 		break;
 	}
+}
+
+void Human::ask_for_difficulty()
+{
+	input_validation();
+	choose_difficulty=playerset%3+1;
+}
+
+int Human::get_humans_choice_of_difficulty()
+{
+	return choose_difficulty;
 }

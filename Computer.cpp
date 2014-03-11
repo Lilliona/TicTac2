@@ -1,4 +1,17 @@
 #include "Computer.h"
+
+Computer::Computer(void)
+{
+}
+
+Computer::~Computer(void)
+{
+}
+
+void Computer::work_with_difficulty_chosen_by_human()
+{
+	
+}
 //
 //
 //Computer::Computer(void)

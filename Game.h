@@ -1,17 +1,20 @@
 #pragma once
 #include "Player.h"
 #include "Computer.h"
+#include "Human.h"
 
 // zu Objekt machen
 // interface
 
 class Game
 {
-	Player player;
-	Computer computer;
+	Human player1;
+	Computer player2;
+	void give_player2_the_chosen_difficulty_of_player1();//**Implement please**//
 
 public:
-
+	Game(void);
+	~Game(void);
 };
 	//	//void show_field();
 	//	int check_if_won();
@@ -26,8 +29,7 @@ public:
 	//	void menu_of_turn();
 	//	void inputvaildation();
 	//public:
-	//	Game(void);
-	//	~Game(void);
+	//	
 	//	static char field[9]; //nicht wiederverwendbar // static weg, keine variable,private
 	//	void management_of_turn();	
 //};

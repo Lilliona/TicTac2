@@ -1,30 +1,27 @@
-﻿Der Buildvorgang wurde am 11.03.2014 19:25:20 gestartet.
+﻿Der Buildvorgang wurde am 12.03.2014 16:35:23 gestartet.
      1>Projekt "C:\Users\Julia\Informatik\ZTT\TicTac2\TicTac2\TicTac2.vcxproj" auf Knoten "2", build Ziel(e).
      1>InitializeBuildStatus:
-         Aktualisieren des Timestamps von "Debug\TicTac2.unsuccessfulbuild".
+         "Debug\TicTac2.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Computer.cpp Controller.cpp Game.cpp main.cpp
-         main.cpp
-     1>c:\users\julia\informatik\ztt\tictac2\tictac2\controller.h(12): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'game'
-     1>c:\users\julia\informatik\ztt\tictac2\tictac2\controller.h(12): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
-     1>c:\users\julia\informatik\ztt\tictac2\tictac2\controller.h(12): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
-     1>c:\users\julia\informatik\ztt\tictac2\tictac2\main.cpp(9): warning C4244: 'Argument': Konvertierung von 'time_t' in 'unsigned int', möglicher Datenverlust
-         Game.cpp
-     1>c:\users\julia\informatik\ztt\tictac2\tictac2\controller.h(12): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'game'
-     1>c:\users\julia\informatik\ztt\tictac2\tictac2\controller.h(12): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
-     1>c:\users\julia\informatik\ztt\tictac2\tictac2\controller.h(12): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
-         Code wird generiert...
-         Kompilieren...
-         Computer.cpp
-         Code wird generiert...
-         Kompilieren...
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Controller.cpp
          Controller.cpp
-     1>c:\users\julia\informatik\ztt\tictac2\tictac2\controller.cpp(15): error C2679: Binärer Operator '=': Es konnte kein Operator gefunden werden, der einen rechtsseitigen Operanden vom Typ 'Game *' akzeptiert (oder keine geeignete Konvertierung möglich)
-                 c:\users\julia\informatik\ztt\tictac2\tictac2\game.h(20): kann 'Game &Game::operator =(const Game &)' sein
-                 bei Anpassung der Argumentliste '(Game, Game *)'
-         Code wird generiert...
-     1>Die Erstellung des Projekts "C:\Users\Julia\Informatik\ZTT\TicTac2\TicTac2\TicTac2.vcxproj" ist abgeschlossen, build Ziel(e) -- FEHLER.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\TicTac2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.lib" /MACHINE:X86 Debug\Field.obj
+         Debug\Controller.obj
+         Debug\Game.obj
+         Debug\Human.obj
+         Debug\main.obj
+         Debug\Computer.obj
+         Debug\Player.obj
+         LINK : C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.exe wurde nicht gefunden oder beim letzten inkrementellen Linkvorgang nicht erstellt; vollständiger Link wird durchgeführt.
+         TicTac2.vcxproj -> C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.exe;#1" /manifest Debug\TicTac2.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Die Datei "Debug\TicTac2.unsuccessfulbuild" wird gelöscht.
+         Aktualisieren des Timestamps von "Debug\TicTac2.lastbuildstate".
+     1>Die Erstellung des Projekts "C:\Users\Julia\Informatik\ZTT\TicTac2\TicTac2\TicTac2.vcxproj" ist abgeschlossen, build Ziel(e).
 
-Fehler beim Erstellen
+Das Erstellen war erfolgreich.
 
-Verstrichene Zeit 00:00:01.33
+Verstrichene Zeit 00:00:00.78

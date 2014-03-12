@@ -1,5 +1,4 @@
 #pragma once
-#include "Player.h"
 #include "Computer.h"
 #include "Human.h"
 #include "Game.h"
@@ -9,7 +8,8 @@
 
 class Controller
 {
-	Game game;
+	
+	Game *game;
 
 public:
 	Controller(void);

@@ -2,78 +2,78 @@
 
 Computer::Computer(void)
 {
-	Computer(2);
+//	Computer(2);
 }
-
-Computer::Computer(int difficulty_in)
-{
-	number_of_difficulty=difficulty_in;
-}
+//
+//Computer::Computer(int difficulty_in)
+//{
+////	number_of_difficulty=difficulty_in;
+//}
 
 Computer::~Computer(void)
 {
 }
 
-void Computer::generate_computers_ai_at_difficulty()
-{
-
-	if (number_of_difficulty==1)
-	{
-	
-	}
-	else if(number_of_difficulty==2)
-	{
-	
-	}
-	else if(number_of_difficulty==3)
-	{
-	
-	}
-}
-
-void Computer::input_validation()
-{
-	string entered_string;
-	entered_string=number_of_difficulty;
-
-	while (1)
-	{
-		bool validateNumeric = true;
-
-		for (unsigned i=0; i < entered_string.length(); i++)
-		{
-			if (!isdigit(entered_string[i]))
-			{
-				validateNumeric = false;
-				break;
-			}
-		}
-		if (!validateNumeric)
-		{
-			cout << "wrong entry. try again: ";
-			getline(cin, entered_string);
-			continue;
-		}
-
-		stringstream sStream (entered_string);
-		sStream >> number_of_difficulty; 
-
-		if (number_of_difficulty>3)
-		{
-			cout << "You are over the valid range. Try again: ";
-			getline(cin, entered_string);
-			continue;
-		}
-
-		if (number_of_difficulty<1)
-		{
-			cout << "You are under the valid range. Try again: ";
-			getline(cin, entered_string);
-			continue;
-		}
-		break;
-	}
-}
+//void Computer::generate_computers_ai_at_difficulty()
+//{
+//
+//	if (number_of_difficulty==1)
+//	{
+//	
+//	}
+//	else if(number_of_difficulty==2)
+//	{
+//	
+//	}
+//	else if(number_of_difficulty==3)
+//	{
+//	
+//	}
+//}
+//
+//void Computer::input_validation()
+//{
+//	string entered_string;
+//	entered_string=number_of_difficulty;
+//
+//	while (1)
+//	{
+//		bool validateNumeric = true;
+//
+//		for (unsigned i=0; i < entered_string.length(); i++)
+//		{
+//			if (!isdigit(entered_string[i]))
+//			{
+//				validateNumeric = false;
+//				break;
+//			}
+//		}
+//		if (!validateNumeric)
+//		{
+//			cout << "wrong entry. try again: ";
+//			getline(cin, entered_string);
+//			continue;
+//		}
+//
+//		stringstream sStream (entered_string);
+//		sStream >> number_of_difficulty; 
+//
+//		if (number_of_difficulty>3)
+//		{
+//			cout << "You are over the valid range. Try again: ";
+//			getline(cin, entered_string);
+//			continue;
+//		}
+//
+//		if (number_of_difficulty<1)
+//		{
+//			cout << "You are under the valid range. Try again: ";
+//			getline(cin, entered_string);
+//			continue;
+//		}
+//		break;
+//	}
+//}
 //
 //void Computer::generate_computers_ai_hard()
 //{ 

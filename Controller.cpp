@@ -12,7 +12,24 @@ Controller::~Controller(void)
 
 void Controller::generate_new_game()
 {
+
 	game=new Game(new Human(),new Human());
+	if (game->player1==new Human())
+	{
+		cout << "1: It's a Human!" << endl;
+	}
+	else if(game->player1==new Computer())
+		cout << "1: It's a Computer!" << endl;
+	else
+		cout << "1:Oh no D:" << endl; 
+	if(game->player2==new Human())
+	{
+		cout << "2: It's a Human!" << endl;
+	}
+	else if(game->player2==new Computer())
+		cout << "2: It's a Computer!" << endl;
+	else 
+		cout << "2:Oh no D:" << endl;
 }
 
 

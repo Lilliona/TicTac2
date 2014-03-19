@@ -1,16 +1,10 @@
 #include "Controller.h"
-#include <iostream>
+#include <cstdio>
 
-
-using namespace std;
 
 int main()
 {
-	srand(time(NULL));
-	Controller *new_game;
-	new_game=new Controller();
-	new_game->generate_new_game();
-
-	delete new_game;
-	return 0;
+    Controller *new_game = new Controller();
+    puts("Test");
+    return 0;
 }

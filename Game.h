@@ -5,14 +5,10 @@
 
 class Game
 {
-//	void rules();
-	//void turn();
-
-
 public:
-	Game(void);
+	Game();
 	Game(Player *player1_in,Player *player2_in);
-	~Game(void);
+	~Game();
 	Player *player1;
 	Player *player2;
 };

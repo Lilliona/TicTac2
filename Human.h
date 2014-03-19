@@ -3,15 +3,7 @@
 
 class Human: public Player
 {
-
-	//void ask_for_playerset(); //**ready**//
-	//void input_validation();
-
 public:
-	Human(void);
-	~Human(void);
-
+    Human();
+    ~Human();
 };
-
-//public:
-//	int generate_players_scores(); //weg

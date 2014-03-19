@@ -1,11 +1,10 @@
 #include "Field.h"
 
 
-Field::Field(void)
+Field::Field()
 {
 }
 
-
-Field::~Field(void)
+Field::~Field()
 {
 }

@@ -1,22 +1,18 @@
-#include "Game.h"
-
-
-Game::Game(void)
-{
-	player1=new Human();
-	player2=new Human();
-}
-
-Game::Game(Player *player1_in,Player *player2_in)
-{
-	player1=player1_in;
-	player2=player2_in;
-}
-
-
-Game::~Game(void)
-{
-}
+//#include "Game.h"
+//
+//Game::Game(void)
+//{
+//
+//}
+//
+//Game(int game_in)
+//{
+//	game=game_in;
+//}
+//Game::~Game(void)
+//{
+//
+//}
 //
 //void Game::rules()
 //{

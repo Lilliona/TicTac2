@@ -1,14 +1,9 @@
-#include "Player.h"
-
-Player::Player(void)
-{
-}
-
-Player::~Player(void)
-{
-}
+//#include "Player.h"
 //
-//int Player::get_value_to_place_symbol()
+//Player::Player(void)
 //{
-//	return playerset;
+//}
+//
+//Player::~Player(void)
+//{
 //}

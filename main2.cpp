@@ -30,8 +30,9 @@ public:
     }
 };
 
-int main(){
-    Controller * c = new Controller();
-    
+int main()
+{
+    Controller *c = new Controller();
+
     return 0;
 }

@@ -5,31 +5,13 @@ using namespace std;
 class Player
 {
 private:
-	int value_of_player; //nicht player
+	
 public:
 	Player();
-	//Player(int value_of_player);
 	~Player();
-	int get_value();
+	
+	virtual int get_fieldtarget();
 };
-
-
-Player::Player()
-{
-
-}
-//Player::Player(int value_of_player)
-//{
-//	this->value_of_player;
-//}
-Player::~Player()
-{
-}
-
-int Player::get_value()
-{
-	return value_of_player;
-}
 
 class Human: public Player
 {
@@ -38,15 +20,18 @@ private:
 public:
 	Human();
 	~Human();
+	int get_fieldtarget();
 	void returnhuman();
 };
 
-Human::Human()
+int Human::get_fieldtarget()
 {
-}
+	int fieldnumber;
 
-Human::~Human()
-{
+	cout << "Please enter a number to set a field: ";	
+	cin >> fieldnumber;
+
+	return fieldnumber;
 }
 
 void Human::returnhuman()
@@ -58,18 +43,8 @@ class Computer: public Player
 {
 private:
 public:
-	Computer();
-	~Computer();
 	void returncomputer();
 };
-
-Computer::Computer()
-{
-}
-
-Computer::~Computer()
-{
-}
 
 void Computer::returncomputer()
 {
@@ -84,30 +59,28 @@ public:
 	Game();
 	~Game();
 	void turn();
-	Player *player1;
-	Player *player2;
-	int get_player1();
-	int get_player2();
+
 };
 
-Game::Game()
+class Controller
 {
-	//player1=new Player();
-	//player2=new Player();
-}
-//int Game::get_player1()
-//{
-//	return player1->get_value();
-//}
-//int Game::get_player2()
-//{
-//	return player2->get_value();
-//}
-Game::~Game()
+private:
+	Player *player1;
+	Player *player2;
+	
+	void turn();
+public:
+	void start_game();
+};
+
+void Controller::start_game()
 {
+	cout << "Welcome to a new Game of TicTacToe!" << endl;
+
+	turn();
 }
 
-void Game::turn()
+void Controller::turn()
 {
 //	cout << "This is a turn!" << endl; 
 //
@@ -159,30 +132,10 @@ void Game::turn()
 				
 }
 
-class Controller
-{
-private:
-
-public:
-	Game *game;
-	Controller();
-	~Controller();
-
-};
-
-Controller::Controller()
-{
-	this->game=new Game();
-}
-
-Controller::~Controller()
-{
-}
-
 int main()
 {
 	Controller *tictactoe=new Controller();
-	tictactoe->game->turn(); 
+	tictactoe->start_game(); 
 
 	delete tictactoe;
 	return 0;

@@ -1,4 +1,4 @@
-﻿Der Buildvorgang wurde am 28.03.2014 14:13:59 gestartet.
+﻿Der Buildvorgang wurde am 28.03.2014 14:21:46 gestartet.
      1>Projekt "C:\Users\Julia\Informatik\ZTT\TicTac2\TicTac2\TicTac2.vcxproj" auf Knoten "2", build Ziel(e).
      1>InitializeBuildStatus:
          Aktualisieren des Timestamps von "Debug\TicTac2.unsuccessfulbuild".
@@ -13,13 +13,12 @@
          Debug\main.obj
          Debug\Computer.obj
          Debug\Player.obj
-         LINK : C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.exe wurde nicht gefunden oder beim letzten inkrementellen Linkvorgang nicht erstellt; vollständiger Link wird durchgeführt.
-     1>main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: __thiscall Player::Player(void)" (??0Player@@QAE@XZ)" in Funktion ""public: __thiscall Computer::Computer(void)" (??0Computer@@QAE@XZ)".
-     1>main.obj : error LNK2001: Nicht aufgelöstes externes Symbol ""public: virtual int __thiscall Player::get_fieldtarget(void)" (?get_fieldtarget@Player@@UAEHXZ)".
-     1>main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: __thiscall Player::~Player(void)" (??1Player@@QAE@XZ)" in Funktion ""public: __thiscall Computer::~Computer(void)" (??1Computer@@QAE@XZ)".
+     1>main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: __thiscall Player::Player(void)" (??0Player@@QAE@XZ)" in Funktion ""private: void __thiscall Controller::turn(void)" (?turn@Controller@@AAEXXZ)".
+     1>main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: __thiscall Player::~Player(void)" (??1Player@@QAE@XZ)" in Funktion ""public: void * __thiscall Player::`scalar deleting destructor'(unsigned int)" (??_GPlayer@@QAEPAXI@Z)".
+     1>main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: __thiscall Controller::Controller(void)" (??0Controller@@QAE@XZ)" in Funktion "_main".
      1>C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.exe : fatal error LNK1120: 3 nicht aufgelöste externe Verweise.
      1>Die Erstellung des Projekts "C:\Users\Julia\Informatik\ZTT\TicTac2\TicTac2\TicTac2.vcxproj" ist abgeschlossen, build Ziel(e) -- FEHLER.
 
 Fehler beim Erstellen
 
-Verstrichene Zeit 00:00:00.67
+Verstrichene Zeit 00:00:00.59

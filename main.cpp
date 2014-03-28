@@ -70,6 +70,8 @@ private:
 	
 	void turn();
 public:
+	Controller();
+	~Controller();
 	void start_game();
 };
 
@@ -82,6 +84,9 @@ void Controller::start_game()
 
 void Controller::turn()
 {
+
+	player1=new Player();
+	player2=new Player();
 //	cout << "This is a turn!" << endl; 
 //
 //	for (int i=0; i<2;i++)
@@ -129,6 +134,8 @@ void Controller::turn()
 //
 //	
 //
+	delete player1; 
+	delete player2;
 				
 }
 
@@ -137,6 +144,6 @@ int main()
 	Controller *tictactoe=new Controller();
 	tictactoe->start_game(); 
 
-	delete tictactoe;
+//	delete tictactoe;
 	return 0;
 }

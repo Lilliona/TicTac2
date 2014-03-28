@@ -2,13 +2,14 @@
 #include <string>
 using namespace std;
 
-class Player
+virtual class Player
 {
 private:
 	
 public:
 	Player();
 	~Player();
+
 	
 	virtual int get_fieldtarget();
 };

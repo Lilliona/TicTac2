@@ -1,10 +1,15 @@
-﻿Der Buildvorgang wurde am 19.03.2014 17:29:32 gestartet.
+﻿Der Buildvorgang wurde am 28.03.2014 12:49:15 gestartet.
      1>Projekt "C:\Users\Julia\Informatik\ZTT\TicTac2\TicTac2\TicTac2.vcxproj" auf Knoten "2", build Ziel(e).
      1>InitializeBuildStatus:
-         Aktualisieren des Timestamps von "Debug\TicTac2.unsuccessfulbuild".
+         "Debug\TicTac2.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Computer.cpp Controller.cpp Game.cpp main.cpp
          main.cpp
+         Code wird generiert...
+         Überspringen... (keine relevanten Änderungen gefunden)
+         Game.cpp
+         Controller.cpp
+         Computer.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\TicTac2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.lib" /MACHINE:X86 Debug\Field.obj
          Debug\Controller.obj
@@ -13,11 +18,15 @@
          Debug\main.obj
          Debug\Computer.obj
          Debug\Player.obj
-     1>main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: int __thiscall Game::get_player2(void)" (?get_player2@Game@@QAEHXZ)" in Funktion "_main".
-     1>main.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: int __thiscall Game::get_player1(void)" (?get_player1@Game@@QAEHXZ)" in Funktion "_main".
-     1>C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.exe : fatal error LNK1120: 2 nicht aufgelöste externe Verweise.
-     1>Die Erstellung des Projekts "C:\Users\Julia\Informatik\ZTT\TicTac2\TicTac2\TicTac2.vcxproj" ist abgeschlossen, build Ziel(e) -- FEHLER.
+         LINK : C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.exe wurde nicht gefunden oder beim letzten inkrementellen Linkvorgang nicht erstellt; vollständiger Link wird durchgeführt.
+         TicTac2.vcxproj -> C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Julia\Informatik\ZTT\TicTac2\Debug\TicTac2.exe;#1" /manifest Debug\TicTac2.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Die Datei "Debug\TicTac2.unsuccessfulbuild" wird gelöscht.
+         Aktualisieren des Timestamps von "Debug\TicTac2.lastbuildstate".
+     1>Die Erstellung des Projekts "C:\Users\Julia\Informatik\ZTT\TicTac2\TicTac2\TicTac2.vcxproj" ist abgeschlossen, build Ziel(e).
 
-Fehler beim Erstellen
+Das Erstellen war erfolgreich.
 
-Verstrichene Zeit 00:00:00.54
+Verstrichene Zeit 00:00:01.43
